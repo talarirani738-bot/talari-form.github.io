@@ -1,0 +1,381 @@
+
+
+    </style>
+</head>
+<body>
+    <div class=""siet-card">
+        <div class="top-header">
+            <div class="college-name">
+                SV ENGINEERING COLLEGE
+                <small><i class="fas fa-graduation-cap" style="margin-left: 8px; opacity: 0.6;"></i></small>
+      </div>
+      <div class="reg-form-tag">
+        <i class="fas fa-table"></i> StudentRegiForm · StudentTable
+      </div>
+    </div>-->
+
+    <!-- WELCOME + Sv College -->
+     <!--
+  -->  
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SV ENGINEERING COLLEGE</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f7fc;
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .siet-card {
+      max-width: 920px;
+      width: 100%;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 20px 40px -10px rgba(0, 20, 40, 0.25);
+      overflow: hidden;
+      padding: 2rem 2.5rem 2.8rem;
+      border: 1px solid rgba(0, 70, 150, 0.08);
+      transition: all 0.2s;
+    }
+
+    /* ----- header row ----- */
+    .top-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 3px solid #0b2a4a;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .college-name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #0b2a4a;
+    }
+    .college-name small {
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #2a4b6e;
+      margin-left: 6px;
+    }
+
+    .reg-form-tag {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1d3b5a;
+      background: #e6edf6;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #b4cae0;
+      white-space: nowrap;
+    }
+    .reg-form-tag i {
+      margin-right: 6px;
+      color: #1f6390;
+    }
+
+    /* ----- IMAGE SECTION ----- */
+    .image-spotlight {
+      margin: 1rem 0 1.2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-frame {
+      flex: 2 1 280px;
+      min-width: 200px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0, 20, 30, 0.12);
+      background: #dce4ef;
+      border: 1px solid #bccfe0;
+      transition: 0.2s ease;
+    }
+    .image-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #dce4ef;
+    }
+
+    .logo-badge {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #eef4fc;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      border: 1px solid #c6d7ea;
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.8);
+    }
+    .logo-badge i {
+      font-size: 2.8rem;
+      color: #0b2a4a;
+    }
+    .logo-badge small {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #1f4a72;
+      margin-top: 2px;
+      letter-spacing: 0.3px;
+    }
+
+    /* welcome & other sections */
+    .welcome-section {
+      margin: 0.8rem 0 0.4rem 0;
+    }
+    .welcome-headline {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #0b2a4a;
+      margin-bottom: 0.1rem;
+    }
+    .welcome-headline i {
+      color: #c44536;
+      margin-right: 8px;
+    }
+    .siet-subhead {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #1f4a72;
+      border-left: 5px solid #b22234;
+      padding-left: 1rem;
+      margin: 0.2rem 0 1rem 0;
+      background: #f0f4fa;
+      display: inline-block;
+      border-radius: 0 30px 30px 0;
+      padding: 0.3rem 1.2rem;
+    }
+    hr.divider-light {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #b22234, #d9e2ed, #b22234);
+      margin: 0.6rem 0 1.2rem 0;
+      opacity: 0.35;
+    }
+
+    /* who we are */
+    .who-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #0b2a4a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.6rem;
+    }
+    .who-title i {
+      color: #b22234;
+      font-size: 1.8rem;
+    }
+    .mission-text {
+      background: #f8faff;
+      padding: 1.2rem 1.8rem;
+      border-radius: 20px;
+      border-left: 6px solid #b22234;
+      line-height: 1.7;
+      color: #1f3a57;
+      font-size: 1rem;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+    .mission-text strong {
+      color: #0b2a4a;
+    }
+
+    /* branches */
+    .branches-section {
+      margin-top: 1.8rem;
+    }
+    .branches-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0b2a4a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 2px dashed #b4cae0;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+    .branches-title i {
+      color: #b22234;
+      font-size: 1.7rem;
+    }
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 0.9rem 1rem;
+    }
+    .branch-item {
+      background: #eef4fc;
+      padding: 0.7rem 1rem 0.7rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      color: #103456;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #d4e0ef;
+      transition: 0.1s ease;
+      font-size: 0.98rem;
+    }
+    .branch-item i {
+      color: #b22234;
+      font-size: 0.9rem;
+      width: 20px;
+      text-align: center;
+    }
+    .branch-item:hover {
+      background: #dce8f7;
+      border-color: #a6bcd6;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 40, 80, 0.05);
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #4c6c8a;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #dae3ef;
+      padding-top: 1.2rem;
+      letter-spacing: 0.3px;
+    }
+    .footer-note i {
+      color: #b22234;
+      opacity: 0.7;
+    }
+
+    /* responsive */
+    @media (max-width: 650px) {
+      .siet-card { padding: 1.5rem; }
+      .top-header { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+      .college-name { font-size: 1.8rem; }
+      .reg-form-tag { font-size: 0.85rem; padding: 0.2rem 0.9rem; white-space: normal; }
+      .welcome-headline { font-size: 1.8rem; }
+      .siet-subhead { font-size: 1.2rem; padding: 0.2rem 1rem; }
+      .mission-text { padding: 1rem 1.2rem; font-size: 0.95rem; }
+      .branch-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+      .branch-item { padding: 0.5rem 0.7rem; font-size: 0.9rem; }
+      .image-spotlight { flex-direction: column; align-items: stretch; }
+      .logo-badge { align-self: center; flex-direction: row; gap: 8px; padding: 0.5rem 1.2rem; }
+    }
+    @media (max-width: 450px) {
+      .branch-grid { grid-template-columns: 1fr; }
+      .college-name { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="siet-card">
+
+  <!-- HEADER: SV ENGINEERING COLLEGE -->
+  <div class="top-header">
+    <div class="college-name">
+      SV ENGINEERING COLLEGE
+      <small><i class="fas fa-graduation-cap" style="margin-left: 8px; opacity: 0.6;"></i></small>
+    </div>
+    <div class="reg-form-tag">
+      <i class="fas fa-table"></i> StudentRegiForm · StudentTable
+    </div>
+  </div>
+
+  <!-- IMAGE SPOTLIGHT -->
+  <div class="image-spotlight">
+    <div class="image-frame">
+      <img 
+        src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=450&fit=crop&crop=center&auto=format"
+        alt="SV Engineering College Campus"
+        title="SV Engineering College – Engineering Excellence"
+      />
+    </div>
+    <div class="logo-badge">
+      <i class="fas fa-landmark"></i>
+      <small>SV · ENGINEERING</small>
+    </div>
+  </div>
+
+  <!-- WELCOME -->
+  <div class="welcome-section">
+    <div class="welcome-headline">
+      <i class="fas fa-hand-peace"></i> Welcome to SV Engineering College
+    </div>
+    <div class="siet-subhead">
+      <i class="fas fa-building-columns" style="margin-right: 8px;"></i> SV Engineering College
+    </div>
+    <hr class="divider-light">
+  </div>
+
+  <!-- WHO WE ARE -->
+  <div class="who-we-are">
+    <div class="who-title">
+      <i class="fas fa-people-group"></i> Who We Are
+    </div>
+    <div class="mission-text">
+      <strong>To train our students to become best Engineering Entrepreneurs today</strong> who will lead their organizations successfully in the future, locally, nationally and globally.
+      <br><br>
+      To provide an environment which fosters continuous improvement innovation with related technical support facilities to enhance student and faculty effectiveness.
+      <br><br>
+      To impart training for ensuring the student to acquire all the professional skills with necessary theoretical & conceptual Knowledge & to provide relevant education with building on <strong>Quality, Innovation, Excellence</strong>.
+    </div>
+  </div>
+
+  <!-- DIPLOMA BRANCHES -->
+  <div class="branches-section">
+    <div class="branches-title">
+      <i class="fas fa-diagram-project"></i> Diploma Branches of SV Engineering College
+    </div>
+    <div class="branch-grid">
+      <div class="branch-item"><i class="fas fa-microchip"></i> Computer Engineering</div>
+      <div class="branch-item"><i class="fas fa-gears"></i> Mechanical Engineering</div>
+      <div class="branch-item"><i class="fas fa-bolt"></i> Electrical Engineering</div>
+      <div class="branch-item"><i class="fas fa-wifi"></i> Electronics & Communication</div>
+      <div class="branch-item"><i class="fas fa-cubes"></i> Civil Engineering</div>
+      <div class="branch-item"><i class="fas fa-car"></i> Automobile Engineering</div>
+      <div class="branch-item"><i class="fas fa-flask"></i> Chemical Engineering</div>
+      <div class="branch-item"><i class="fas fa-database"></i> Information Technology</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-note">
+    <span><i class="fas-regular fa-pen-to-square"></i> StudentRegiForm · StudentTable</span>
+    <span><i class="fas fa-circle-check"></i> SV · ENGINEERING</span>
+    <span><i class="fas fa-arrow-right"></i> Quality · Innovation · Excellence</span>
+  </div>
+
+</div>
+</body>
+</html>
